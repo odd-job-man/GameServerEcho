@@ -1,4 +1,5 @@
 #include <WinSock2.h>
+#include "GameServer.h"
 #include "CommonProtocol.h"
 #include "Player.h"
 #include "ContentsType.h"
