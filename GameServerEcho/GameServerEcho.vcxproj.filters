@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="헤더 파일\EchoHeader">
       <UniqueIdentifier>{30c01594-a5de-4926-b2cb-c65bcff54a9a}</UniqueIdentifier>
     </Filter>
@@ -25,6 +21,30 @@
     <Filter Include="헤더 파일\GameServerLibheader">
       <UniqueIdentifier>{682dc9a6-0f86-4b1b-b496-2eb4021e02bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ServerCommon">
+      <UniqueIdentifier>{b62c4ac5-0e91-4af7-ac21-9e116958f0cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\DataStructure">
+      <UniqueIdentifier>{fc1c4b71-a61d-4db6-a5a9-d3d2c10da904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\Job">
+      <UniqueIdentifier>{b23582af-a2b5-45ba-a879-6b2ae093a6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\Logger">
+      <UniqueIdentifier>{85f1af0f-956e-492f-9f01-54fce3b20804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\Monitor">
+      <UniqueIdentifier>{53d1e6e0-f911-4702-8824-09e47f3b102d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\NetWork">
+      <UniqueIdentifier>{1b3b4e3b-f4aa-49fb-b275-7ac263fefada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\Parser">
+      <UniqueIdentifier>{2a1e7d6d-af03-471c-a52d-2d8b0c0d9b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerCommon\UpdateAndTimer">
+      <UniqueIdentifier>{0735793a-f139-422b-a4f2-21a314c5eed4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -33,67 +53,16 @@
     <ClInclude Include="CommonProtocol.h">
       <Filter>헤더 파일\EchoHeader</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Timer.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\UpdateBase.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Assert.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CAddressTranslator.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLinkedList.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeObjectPool.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeQueue.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeStack.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsBase.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsType.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CTlsObjectPool.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ErrType.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\GameServer.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\HMonitor.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\IHandler.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Logger.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\MyJob.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\MYOVERLAPPED.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Packet.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Parser.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\RingBuffer.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\Session.h">
@@ -123,30 +92,63 @@
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Monitorable.h">
-      <Filter>헤더 파일\GameServerLibheader</Filter>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeObjectPool.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeQueue.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeStack.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CTlsObjectPool.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CAddressTranslator.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.h">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Job\MyJob.h">
+      <Filter>ServerCommon\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Logger\Logger.h">
+      <Filter>ServerCommon\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Monitor\Monitorable.h">
+      <Filter>ServerCommon\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.h">
+      <Filter>ServerCommon\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.h">
+      <Filter>ServerCommon\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\NetWork\Packet.h">
+      <Filter>ServerCommon\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Parser\Parser.h">
+      <Filter>ServerCommon\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.h">
+      <Filter>ServerCommon\UpdateAndTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.h">
+      <Filter>ServerCommon\UpdateAndTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\MYOVERLAPPED.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Assert.h">
+      <Filter>ServerCommon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\EchoCPP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\CLinkedList.cpp">
-      <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\HMonitor.cpp">
-      <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\RingBuffer.cpp">
-      <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\Session.cpp">
-      <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\Timer.cpp">
-      <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\UpdateBase.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
     </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\GameServer.cpp">
@@ -176,5 +178,36 @@
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.cpp">
+      <Filter>ServerCommon\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.cpp">
+      <Filter>ServerCommon\Monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.cpp">
+      <Filter>ServerCommon\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.cpp">
+      <Filter>ServerCommon\UpdateAndTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.cpp">
+      <Filter>ServerCommon\UpdateAndTimer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ServerCommon\ServerCommon\Logger\LoggerMT.dll">
+      <Filter>ServerCommon\Logger</Filter>
+    </None>
+    <None Include="..\..\ServerCommon\ServerCommon\Parser\TextParser.dll">
+      <Filter>ServerCommon\Parser</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\ServerCommon\ServerCommon\Logger\LoggerMT.lib">
+      <Filter>ServerCommon\Logger</Filter>
+    </Library>
+    <Library Include="..\..\ServerCommon\ServerCommon\Parser\TextParser.lib">
+      <Filter>ServerCommon\Parser</Filter>
+    </Library>
   </ItemGroup>
 </Project>

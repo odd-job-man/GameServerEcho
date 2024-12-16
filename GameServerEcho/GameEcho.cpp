@@ -83,7 +83,7 @@ void GameEcho::OnError(ULONGLONG id, int errorType, Packet* pRcvdPacket)
 
 void GameEcho::OnPost(void* order)
 {
-    ((Excutable*)order)->Excute();
+    //((Excutable*)order)->Excute();
 }
 
 void GameEcho::OnMonitor()

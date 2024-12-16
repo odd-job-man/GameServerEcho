@@ -123,7 +123,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\GameServerLib\GameServerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\UpdateAndTimer;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Parser;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\NetWork;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Monitor;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Logger;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Job;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\DataStructure;C:\Users\dhtmd\OneDrive\문서\GitHub\GameServerLib\GameServerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
     </ClCompile>
     <Link>
@@ -134,16 +134,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\CLinkedList.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ContentsBase.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\GameServer.cpp" />
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\HMonitor.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp" />
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\RingBuffer.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\SerialContent.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\Session.cpp" />
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\Timer.cpp" />
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\UpdateBase.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.cpp" />
     <ClCompile Include="AuthMultiThread.cpp" />
     <ClCompile Include="AuthSingleThread.cpp" />
     <ClCompile Include="EchoMultiThread.cpp" />
@@ -152,31 +152,30 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Assert.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CAddressTranslator.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLinkedList.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeObjectPool.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeQueue.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeStack.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsBase.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsType.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\CTlsObjectPool.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ErrType.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\GameServer.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\HMonitor.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\IHandler.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Logger.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Monitorable.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\MyJob.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\MYOVERLAPPED.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Packet.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Parser.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\RingBuffer.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\SerialContent.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\Session.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Timer.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\UpdateBase.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Assert.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CAddressTranslator.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeObjectPool.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeQueue.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeStack.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CTlsObjectPool.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Job\MyJob.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Logger\Logger.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Monitor\Monitorable.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\MYOVERLAPPED.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\NetWork\Packet.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\Parser\Parser.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.h" />
     <ClInclude Include="AuthMultiThread.h" />
     <ClInclude Include="AuthSingleThread.h" />
     <ClInclude Include="CommonProtocol.h" />
@@ -185,6 +184,14 @@
     <ClInclude Include="en_ContentsType.h" />
     <ClInclude Include="GameEcho.h" />
     <ClInclude Include="Player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ServerCommon\ServerCommon\Logger\LoggerMT.dll" />
+    <None Include="..\..\ServerCommon\ServerCommon\Parser\TextParser.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\ServerCommon\ServerCommon\Logger\LoggerMT.lib" />
+    <Library Include="..\..\ServerCommon\ServerCommon\Parser\TextParser.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
