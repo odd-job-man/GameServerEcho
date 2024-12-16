@@ -59,15 +59,19 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CommonProperty.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CommonProperty.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CommonProperty.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CommonProperty.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -123,7 +127,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\UpdateAndTimer;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Parser;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\NetWork;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Monitor;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Logger;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\Job;C:\Users\dhtmd\OneDrive\문서\GitHub\ServerCommon\ServerCommon\DataStructure;C:\Users\dhtmd\OneDrive\문서\GitHub\GameServerLib\GameServerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
     </ClCompile>
     <Link>
@@ -136,9 +139,9 @@
   <ItemGroup>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ContentsBase.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\GameServer.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\GameSession.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\SerialContent.cpp" />
-    <ClCompile Include="..\..\GameServerLib\GameServerLib\Session.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.cpp" />
@@ -156,9 +159,9 @@
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsType.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ErrType.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\GameServer.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\GameSession.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\SerialContent.h" />
-    <ClInclude Include="..\..\GameServerLib\GameServerLib\Session.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\Assert.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CAddressTranslator.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.h" />
