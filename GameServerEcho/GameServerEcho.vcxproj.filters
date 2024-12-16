@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\EchoHeader">
+      <UniqueIdentifier>{30c01594-a5de-4926-b2cb-c65bcff54a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\EchoCPP">
+      <UniqueIdentifier>{799d7733-f5af-4cb9-a0f3-d4463039330b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GameServerLibCpp">
+      <UniqueIdentifier>{26106d8e-ac78-4994-ac83-3999c85ed536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\GameServerLibheader">
+      <UniqueIdentifier>{682dc9a6-0f86-4b1b-b496-2eb4021e02bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonProtocol.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Timer.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\UpdateBase.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Assert.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CAddressTranslator.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLinkedList.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeObjectPool.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeQueue.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeStack.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsBase.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsType.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CTlsObjectPool.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ErrType.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\GameServer.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\HMonitor.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\IHandler.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Logger.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\MyJob.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\MYOVERLAPPED.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Packet.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Parser.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\RingBuffer.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Session.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEcho.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="en_ContentsType.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthSingleThread.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoSingleThread.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\SerialContent.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthMultiThread.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoMultiThread.h">
+      <Filter>헤더 파일\EchoHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Monitorable.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\CLinkedList.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\HMonitor.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\RingBuffer.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\Session.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\Timer.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\UpdateBase.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\GameServer.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEcho.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthSingleThread.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoSingleThread.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\SerialContent.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthMultiThread.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\ContentsBase.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoMultiThread.cpp">
+      <Filter>소스 파일\EchoCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

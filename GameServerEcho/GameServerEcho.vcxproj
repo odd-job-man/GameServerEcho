@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5500df7b-284a-4b31-b993-1f1b9d33c9e7}</ProjectGuid>
+    <RootNamespace>GameServerEcho</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\GameServerLib\GameServerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\GameServerLib\GameServerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\CLinkedList.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\ContentsBase.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\GameServer.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\HMonitor.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\RingBuffer.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\SerialContent.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\Session.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\Timer.cpp" />
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\UpdateBase.cpp" />
+    <ClCompile Include="AuthMultiThread.cpp" />
+    <ClCompile Include="AuthSingleThread.cpp" />
+    <ClCompile Include="EchoMultiThread.cpp" />
+    <ClCompile Include="EchoSingleThread.cpp" />
+    <ClCompile Include="GameEcho.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Assert.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CAddressTranslator.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLinkedList.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeObjectPool.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeQueue.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CLockFreeStack.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsBase.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsType.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\CTlsObjectPool.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ErrType.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\GameServer.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\HMonitor.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\IHandler.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Logger.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Monitorable.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\MyJob.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\MYOVERLAPPED.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Packet.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Parser.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\RingBuffer.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\SerialContent.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Session.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\Timer.h" />
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\UpdateBase.h" />
+    <ClInclude Include="AuthMultiThread.h" />
+    <ClInclude Include="AuthSingleThread.h" />
+    <ClInclude Include="CommonProtocol.h" />
+    <ClInclude Include="EchoMultiThread.h" />
+    <ClInclude Include="EchoSingleThread.h" />
+    <ClInclude Include="en_ContentsType.h" />
+    <ClInclude Include="GameEcho.h" />
+    <ClInclude Include="Player.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
