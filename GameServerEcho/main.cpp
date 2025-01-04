@@ -5,6 +5,6 @@ GameEcho g_Echo;
 int main()
 {
 	g_Echo.Start();
-	Sleep(INFINITE);
+	g_Echo.WaitUntilShutDown();
 	return 0;
 }

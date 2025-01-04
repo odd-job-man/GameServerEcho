@@ -53,7 +53,3 @@ void EchoMultiThread::OnRecv(Packet* pPacket, void* pPlayer)
 	}
 }
 
-void EchoMultiThread::OnMonitor()
-{
-	printf("Echo salaitne!\n");
-}

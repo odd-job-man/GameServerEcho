@@ -17,6 +17,7 @@ void AuthSingleThread::OnEnter(void* pPlayer)
 
 void AuthSingleThread::OnLeave(void* pPlayer)
 {
+	InterlockedDecrement(&pGameServer_->lPlayerNum_);
 }
 
 void AuthSingleThread::OnRecv(Packet* pPacket, void* pPlayer)
@@ -58,7 +59,3 @@ void AuthSingleThread::ProcessEachPlayer()
 {
 }
 
-void AuthSingleThread::OnMonitor()
-{
-	printf("AUTH Thread FPS : %d\n", InterlockedExchange(&fps_, 0));
-}

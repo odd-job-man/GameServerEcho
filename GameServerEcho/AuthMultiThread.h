@@ -1,7 +1,7 @@
 #pragma once
 #include "ParallelContent.h"
 
-class AuthMultiThread : public ParallelContent, public Monitorable
+class AuthMultiThread : public ParallelContent
 {
 public:
 	AuthMultiThread(GameServer* pGameServer);
@@ -10,7 +10,4 @@ public:
 	virtual void OnEnter(void* pPlayer) override;
 	virtual void OnLeave(void* pPlayer) override;
 	virtual void OnRecv(Packet* pPacket, void* pPlayer) override;
-
-	// Monitorable Overriding
-	virtual void OnMonitor() override;
 };

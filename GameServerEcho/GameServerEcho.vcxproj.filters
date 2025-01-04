@@ -143,6 +143,9 @@
     <ClInclude Include="..\..\GameServerLib\GameServerLib\GameSession.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\GameServerLib\GameServerLib\SendThread.h">
+      <Filter>헤더 파일\GameServerLibheader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -191,6 +194,9 @@
       <Filter>ServerCommon\UpdateAndTimer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\GameSession.cpp">
+      <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GameServerLib\GameServerLib\SendThread.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
     </ClCompile>
   </ItemGroup>

@@ -40,6 +40,7 @@ void AuthMultiThread::OnRecv(Packet* pPacket, void* pPlayer)
 		pAuthPlayer->accountNo = accountNo;
 		pAuthPlayer->sessionID = pGameServer_->GetSessionID(pPlayer);
 		RegisterLeave(pAuthPlayer, en_ContentsType::ECHO);
+		InterlockedIncrement(&pGameServer_->lPlayerNum_);
 		break;
 	}
 	case en_PACKET_CS_GAME_REQ_HEARTBEAT:
@@ -54,9 +55,4 @@ void AuthMultiThread::OnRecv(Packet* pPacket, void* pPlayer)
 		__debugbreak();
 		break;
 	}
-}
-
-void AuthMultiThread::OnMonitor()
-{
-	printf("Auth salaitne!\n");
 }

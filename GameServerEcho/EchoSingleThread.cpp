@@ -29,6 +29,7 @@ void EchoSingleThread::OnEnter(void* pPlayer)
 
 void EchoSingleThread::OnLeave(void* pPlayer)
 {
+	InterlockedDecrement(&pGameServer_->lPlayerNum_);
 }
 
 void EchoSingleThread::OnRecv(Packet* pPacket, void* pPlayer)
@@ -64,7 +65,3 @@ void EchoSingleThread::ProcessEachPlayer()
 {
 }
 
-void EchoSingleThread::OnMonitor()
-{
-	printf("ECHO Thread FPS : %d\n", InterlockedExchange(&fps_, 0));
-}
