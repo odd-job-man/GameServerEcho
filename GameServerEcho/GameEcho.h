@@ -3,9 +3,8 @@
 #include "GameServer.h"
 #include "HMonitor.h"
 #include "EchoSingleThread.h"
-#include "EchoMultiThread.h"
-#include "AuthSingleThread.h"
 #include "AuthMultiThread.h"
+#include "CMClient.h"
 
 class GameEcho : public GameServer
 {
@@ -18,12 +17,7 @@ public:
 	virtual void OnPost(void* order) override;
 
 	EchoSingleThread* pEchoSingle_ = nullptr;
-	EchoMultiThread* pEchoMulti_ = nullptr;
-	AuthSingleThread* pAuthSingle_ = nullptr;
 	AuthMultiThread* pAuthMulti_ = nullptr;
-
-	int bAuthSingle_;
-	int bEchoSingle_;
 
 	// Monitorable Override
 private:
@@ -31,4 +25,9 @@ private:
 	virtual void OnResourceCleanAtShutDown() override;
 	virtual void OnMonitor() override;
 	static inline HMonitor monitor;
+	CMClient* pLanClient_ = nullptr;
+
+public:
+	alignas(64) LONG authPlayerNum_ = 0;
+	LONG echoPlayerNum_ = 0;
 };

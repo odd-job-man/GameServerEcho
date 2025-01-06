@@ -1,8 +1,8 @@
 #include <WinSock2.h>
-#include "GameServer.h"
 #include "CommonProtocol.h"
 #include "Player.h"
 #include "ContentsType.h"
+#include "GameEcho.h"
 #include "AuthMultiThread.h"
 #include "Packet.h"
 
@@ -15,10 +15,12 @@ AuthMultiThread::AuthMultiThread(GameServer* pGameServer)
 
 void AuthMultiThread::OnEnter(void* pPlayer)
 {
+	InterlockedIncrement(&static_cast<GameEcho*>(pGameServer_)->authPlayerNum_);
 }
 
 void AuthMultiThread::OnLeave(void* pPlayer)
 {
+	InterlockedDecrement(&static_cast<GameEcho*>(pGameServer_)->authPlayerNum_);
 }
 
 void AuthMultiThread::OnRecv(Packet* pPacket, void* pPlayer)
@@ -40,18 +42,18 @@ void AuthMultiThread::OnRecv(Packet* pPacket, void* pPlayer)
 		pAuthPlayer->accountNo = accountNo;
 		pAuthPlayer->sessionID = pGameServer_->GetSessionID(pPlayer);
 		RegisterLeave(pAuthPlayer, en_ContentsType::ECHO);
-		InterlockedIncrement(&pGameServer_->lPlayerNum_);
 		break;
 	}
+
 	case en_PACKET_CS_GAME_REQ_HEARTBEAT:
 	{
 		SmartPacket sp = PACKET_ALLOC(Net);
 		(*sp) << Type;
-		pGameServer_->SendPacket(pAuthPlayer->sessionID, sp);
+		pGameServer_->SendPacket(pGameServer_->GetSessionID(pPlayer), sp);
 		break;
 	}
 	default:
-		pGameServer_->Disconnect(pAuthPlayer->sessionID);
+		pGameServer_->Disconnect(pGameServer_->GetSessionID(pPlayer));
 		__debugbreak();
 		break;
 	}

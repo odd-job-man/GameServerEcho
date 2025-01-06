@@ -45,12 +45,12 @@
     <Filter Include="ServerCommon\UpdateAndTimer">
       <UniqueIdentifier>{0735793a-f139-422b-a4f2-21a314c5eed4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LanClient">
+      <UniqueIdentifier>{b391ad29-b7bf-46bd-b3fe-3a1cc9275ad1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
-      <Filter>헤더 파일\EchoHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="CommonProtocol.h">
       <Filter>헤더 파일\EchoHeader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ContentsBase.h">
@@ -71,9 +71,6 @@
     <ClInclude Include="en_ContentsType.h">
       <Filter>헤더 파일\EchoHeader</Filter>
     </ClInclude>
-    <ClInclude Include="AuthSingleThread.h">
-      <Filter>헤더 파일\EchoHeader</Filter>
-    </ClInclude>
     <ClInclude Include="EchoSingleThread.h">
       <Filter>헤더 파일\EchoHeader</Filter>
     </ClInclude>
@@ -81,9 +78,6 @@
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
     <ClInclude Include="AuthMultiThread.h">
-      <Filter>헤더 파일\EchoHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="EchoMultiThread.h">
       <Filter>헤더 파일\EchoHeader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h">
@@ -146,6 +140,18 @@
     <ClInclude Include="..\..\GameServerLib\GameServerLib\SendThread.h">
       <Filter>헤더 파일\GameServerLibheader</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\CMClient.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\CommonProtocol.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LanClient\LanClient\LanClient.h">
+      <Filter>LanClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LanClient\LanClient\LanClientSession.h">
+      <Filter>ServerCommon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -155,9 +161,6 @@
       <Filter>소스 파일\GameServerLibCpp</Filter>
     </ClCompile>
     <ClCompile Include="GameEcho.cpp">
-      <Filter>소스 파일\EchoCPP</Filter>
-    </ClCompile>
-    <ClCompile Include="AuthSingleThread.cpp">
       <Filter>소스 파일\EchoCPP</Filter>
     </ClCompile>
     <ClCompile Include="EchoSingleThread.cpp">
@@ -171,9 +174,6 @@
     </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ContentsBase.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
-    </ClCompile>
-    <ClCompile Include="EchoMultiThread.cpp">
-      <Filter>소스 파일\EchoCPP</Filter>
     </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
@@ -198,6 +198,15 @@
     </ClCompile>
     <ClCompile Include="..\..\GameServerLib\GameServerLib\SendThread.cpp">
       <Filter>소스 파일\GameServerLibCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\CMClient.cpp">
+      <Filter>ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LanClient\LanClient\LanClientSession.cpp">
+      <Filter>LanClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LanClient\LanClient\LanClient.cpp">
+      <Filter>LanClient</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

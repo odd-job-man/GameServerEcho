@@ -120,7 +120,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -132,6 +132,7 @@
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <AdditionalIncludeDirectories>C:\Users\dhtmd\OneDrive\문서\GitHub\LanClient\LanClient;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,14 +149,15 @@
     <ClCompile Include="..\..\GameServerLib\GameServerLib\ParallelContent.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\SendThread.cpp" />
     <ClCompile Include="..\..\GameServerLib\GameServerLib\SerialContent.cpp" />
+    <ClCompile Include="..\..\LanClient\LanClient\LanClient.cpp" />
+    <ClCompile Include="..\..\LanClient\LanClient\LanClientSession.cpp" />
+    <ClCompile Include="..\..\ServerCommon\ServerCommon\CMClient.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\Monitor\HMonitor.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\NetWork\RingBuffer.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.cpp" />
     <ClCompile Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.cpp" />
     <ClCompile Include="AuthMultiThread.cpp" />
-    <ClCompile Include="AuthSingleThread.cpp" />
-    <ClCompile Include="EchoMultiThread.cpp" />
     <ClCompile Include="EchoSingleThread.cpp" />
     <ClCompile Include="GameEcho.cpp" />
     <ClCompile Include="main.cpp" />
@@ -169,7 +171,11 @@
     <ClInclude Include="..\..\GameServerLib\GameServerLib\ParallelContent.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\SendThread.h" />
     <ClInclude Include="..\..\GameServerLib\GameServerLib\SerialContent.h" />
+    <ClInclude Include="..\..\LanClient\LanClient\LanClient.h" />
+    <ClInclude Include="..\..\LanClient\LanClient\LanClientSession.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\Assert.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\CMClient.h" />
+    <ClInclude Include="..\..\ServerCommon\ServerCommon\CommonProtocol.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CAddressTranslator.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLinkedList.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\DataStructure\CLockFreeObjectPool.h" />
@@ -187,9 +193,6 @@
     <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\Timer.h" />
     <ClInclude Include="..\..\ServerCommon\ServerCommon\UpdateAndTimer\UpdateBase.h" />
     <ClInclude Include="AuthMultiThread.h" />
-    <ClInclude Include="AuthSingleThread.h" />
-    <ClInclude Include="CommonProtocol.h" />
-    <ClInclude Include="EchoMultiThread.h" />
     <ClInclude Include="EchoSingleThread.h" />
     <ClInclude Include="en_ContentsType.h" />
     <ClInclude Include="GameEcho.h" />
